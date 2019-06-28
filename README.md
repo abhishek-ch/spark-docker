@@ -46,4 +46,4 @@ spark-shell --master spark://spark-master:7077
 
 Try [http://localhost:8555](http://localhost:8555)
 
-[](https://raw.githubusercontent.com/abhishek-ch/spark-docker/master/spark_ui.png)
+![](https://raw.githubusercontent.com/abhishek-ch/spark-docker/master/spark_ui.png)
