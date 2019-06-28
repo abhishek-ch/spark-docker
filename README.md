@@ -29,11 +29,11 @@ Docker Run -
 docker run --rm -it --network trial_docker_spark-network buntha/spark:latest /bin/sh
 ```
 
- Docker Run, starting Spark-Shell - 
-<code>
+Docker Run, starting Spark-Shell - 
+```
 source ~/.bashrc
 spark-shell --master spark://spark-master:7077
-</code>
+```
 
 
 
