@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   spark-master:
-    image: buntha/spark:latest
+    image: $DOCKER_ID/spark:latest
     container_name: spark-master
     hostname: spark-master
     ports:
@@ -15,7 +15,7 @@ services:
       - "SPARK_MASTER_WEBUI_PORT=8080"
     command: "/start-master.sh"
   spark-worker:
-    image: buntha/spark:latest
+    image: $DOCKER_ID/spark:latest
     depends_on:
       - spark-master
     ports:

@@ -12,9 +12,10 @@ _Port mapping is done 8555:8080 for Spark master UI_
 
 ### How to Run ###
 
-* For Docker build.     ```docker build -t buntha/spark:latest .```
-* Docker Compose        ```docker-compose up``` 
-* For multiple workers  ```docker-compose up --scale spark-worker=3```
+* For Docker build.     		```docker build -t $DOCKER_ID/spark:latest .```
+* Add $DOCKER_NAME in bash      ```export $DOCKER_ID = <Docker Id>```
+* Docker Compose        		```docker-compose up``` 
+* For multiple workers  		```docker-compose up --scale spark-worker=3```
 
 
 #### Starting a Spark-Shell
@@ -39,7 +40,7 @@ spark-shell --master spark://spark-master:7077
 
 ### Troubleshooting
 
-- Currently i am using my own Docker hub id for Spark Image tagging <b>buntha</b>, will suggest to change that...
+- Currently i am using my own Docker hub id for Spark Image tagging <b>buntha</b>, add yours DOCKER_ID in the bash
 
 
 ### Success 
