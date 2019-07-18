@@ -37,6 +37,17 @@ source ~/.bashrc
 spark-shell --master spark://spark-master:7077
 ```
 
+Docker Copy File from Host To Container - 
+```
+docker cp /path/to/spark-assembly.jar docker_containerid:/directory/to/copy
+```
+
+Spark Submit in Docker - 
+```
+docker run --rm -it --network trial_docker_spark-network buntha/spark:latest /bin/sh
+
+spark-submit --class MainClass --master spark://spark-master:7077 spark-assembly.jar
+```
 
 
 ### Troubleshooting
